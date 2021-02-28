@@ -156,3 +156,35 @@ print(python)
 
 #java를 잊었어요
 java.remove("김태호")
+
+
+############### 지료구조의 변경 ###############
+print("#################### 자료구조의 변경 ################")
+
+menu = {"커피", "우유", "주스"}
+print(menu, type(menu))
+
+menu = list(menu)
+print(menu, type(menu))
+
+menu = tuple(menu)
+print(menu, type(menu))
+
+menu = set(menu)
+print(menu, type(menu))
+
+
+# Quiz
+
+from random import *
+
+list = list(range(1, 21)) # 1부터 20까지 숫자를 생성
+
+shuffle(list)
+chosen_list = sample(list, 4)
+print("------당첨자 발표-------")
+shuffle(chosen_list)
+print("치킨 당첨자 : {0}".format(chosen_list[0]))
+shuffle(list)
+print("커피 당첨 : {0}".format(chosen_list[1:]))
+print("--축하합니다--")
