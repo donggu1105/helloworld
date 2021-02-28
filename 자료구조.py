@@ -61,5 +61,49 @@ print(mix_list)
 num_list.extend(mix_list)
 print(num_list)
 
+############### 사전 ###############
+print("#################### 사전 ################")
 
+cabinet = {3:"유재석", 100:"김태호"}  # key-value
+print(cabinet)
+# 값 가져오기 방법 1
+print(cabinet[3])
+print(cabinet[100])
+
+# 값 가져오기 방법 2
+print(cabinet.get(3))
+print(cabinet.get(5))
+print(cabinet.get(5, "사용가능"))
+
+print(3 in cabinet) # 3키가 캐비넷에 있느냐
+
+# 키가 정수가 아니라 str도 가능
+
+cabinet = {"A-3":"유재석", "B-100" : "김태호"}
+
+print(cabinet["A-3"])
+print(cabinet.get("A-3"))
+
+# 새 손님
+print(cabinet)
+
+cabinet["A-3"] = "김종국"
+cabinet["C-29"] = "조세호"
+print(cabinet)
+
+# 간 손님
+
+del cabinet["A-3"]
+print(cabinet)
+
+# key 들만 출력
+print(cabinet.keys())
+# value 들만 출력
+print(cabinet.values())
+# key, value 쌍으로 출력
+print(cabinet.items())
+
+# 목욕탕 폐점
+cabinet.clear()
+print(cabinet)
 
