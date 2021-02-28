@@ -31,3 +31,35 @@ print(index)
 print(python.find("n")) # 찾아서 인덱스 반환
 print(python.find("Java")) # 없으면 -1 반환
 # print(python.index("Java")) # 하면 오류
+
+#문자열 포맷
+print("########## 문자열 포맷 ############")
+
+print("a" + "b")
+print("a", "b")
+
+#방법 1
+print("나는 %d살입니다."  % 20) #정수만
+print("나는 %s을 좋아해요" % "파이썬") # str
+print("Apple 은 %c로 시작해요" % "A") # character
+
+# %s 는 정수던 문자열이던 상관 X
+print("나는 %s살입니다." % 20)
+# 두개 이상
+print("나는 %s색과 %s색을 좋아해요." %("파랑", "빨강"))
+
+
+#방법 2
+print("나는 {}살입니다.".format(20))
+print("나는 {}색과 {}색을 좋아해요".format("파랑", "빨강"))
+print("나는 {0}색과 {1}색을 좋아해요".format("파랑", "빨강"))
+print("나는 {1}색과 {0}색을 좋아해요".format("파랑", "빨강"))
+
+#방법 3
+print("나는 {age}살이며 , {color}색을 좋아해요".format(age = 20, color = "빨강"))
+
+
+#방법 4
+age = 20
+color = "빨강"
+print(f"나는 {age}살이며 , {color}색을 좋아해요!!!!") # 변수로 저장된 값을 사용할수있음
