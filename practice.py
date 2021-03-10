@@ -39,17 +39,86 @@ print("%.4f" % digit)
 # b = int(input("두번쨰 숫자를 입력하세요"))
 #
 # print("{0} / {1} = {2:0.2f}".format(a, b, a/b))
+#
+# names = ["보라", "영희", "철수"]
+# nums = [15, 20, 49]
+#
+# for name, num in zip(names, nums):
+#     print(f"Hi I am {name}, and also {num}")
+#
+# x = 10
+# y = 3
+#
+# print(f"x + y = {x+y} | x / y = {x/y}")
+#
+# date = datetime.datetime.now()
+# print(f"{date:%Y-%m-%d} is on a {date:%A}")
+#
+# floats = [0.555555, 0.12345, 0.56342]
+#
+# for fl in floats:
+#     print(f"fl : {fl:.45}")
+#
+# a = int(input("첫번쨰 숫자를 입력하세요"))
+# b = int(input("두번째 숫자를 입력하세요"))
+#
+# print(f"a / b = {a/b:0.1f}")
 
-names = ["보라", "영희", "철수"]
-nums = [15, 20, 49]
+# digit1= 10
+# digit2 = 2.2
+# string1 = "joey-coding"
+#
+# type(digit1)
+# type(digit2)
+# type(string1)
 
-for name, num in zip(names, nums):
-    print(f"Hi I am {name}, and also {num}")
 
-x = 10
-y = 3
+# mystr = "a man goes into the room..."
+# code = "       00060\n       "
+# print(code.strip(" \n"))
+#
+# letters = "Dave,David,Andy,2222,31323,LLL"
+#
+# letter_list = letters.split(",")
+#
+# for letter in letter_list:
+#     print(letter)
+#
+# filename = "exercise01.docx"
+#
+# print(filename.split(".")[0])
 
-print(f"x + y = {x+y} | x / y = {x/y}")
+# for i in range(1,31):
+#     if i % 3 == 0:
+#         print(i)
+#
+# total, num = 0 , 1
+# while num < 101:
+#     total += num
+#     num += 1
+#
+# print(f"num = {num}, total = {total}")
 
-date = datetime.datetime.now()
-print(f"{date:%Y-%m-%d} is on a {date:%A}")
+num_list = [1,2,3,4,5,-1,-2,-3,-4,-5]
+num_list.reverse()
+
+for i in num_list:
+    print(i)
+
+
+dongs = ["1동", "2동", "3동"]
+hos = ["1호", "2호", "3호"]
+
+for dong in dongs:
+    for ho in hos:
+        print(f"{dong} {ho}")
+
+    print("")
+
+tuple_data = ("a","b","c","d","e")
+print(tuple_data[0], tuple_data[4])
+
+var1, var2 = 1, 2
+var1, var2 = var2, var1
+
+print(f"var1 = {var1}, var2 = {var2} ")
